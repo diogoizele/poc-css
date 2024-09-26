@@ -1,0 +1,86 @@
+/*  Falar sobre ID, classe, e o que mais é usado */
+#app {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.page-width-constraint {
+  max-width: var(--max-width-constraint);
+
+  /* Delimitador de largura - bom pra monitores largos */
+  /* background-color: red; */
+}
+
+.header {
+  background-color: midnightblue;
+  padding: 2rem;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  background-color: #ececec;
+
+  flex: 1;
+
+  div:first-child {
+    display: flex;
+
+    gap: 2rem;
+
+    padding: 4rem;
+  }
+}
+
+.primary-content-block {
+  padding: 2rem;
+  background-color: var(--primary-color);
+  color: white;
+
+  flex: 1;
+
+  border-radius: 0.5rem;
+}
+
+.secondary-content-block {
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  color: white;
+
+  flex: 0;
+
+  border-radius: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  /* Align self do flex-box tira a necessidade de um align-items */
+}
+
+.image {
+  width: 132px;
+  height: 132px;
+  /* Comentar sobre o align self do flex-box */
+  align-self: center;
+}
+
+.footer {
+  background-color: midnightblue;
+  padding: 2rem;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-only {
+  display: none;
+}

@@ -1,0 +1,6 @@
+/* Falar sobre variáveis css */
+:root {
+  --max-width-constraint: 920px;
+  --primary-color: slateblue;
+  --secondary-color: darkslateblue;
+}

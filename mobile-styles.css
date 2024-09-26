@@ -1,0 +1,20 @@
+@media screen and (max-width: 768px) {
+  .page-width-constraint {
+    max-width: 100%;
+  }
+
+  .header {
+    padding: 1rem;
+    font-size: 0.7rem;
+  }
+
+  .content-container {
+    div:first-child {
+      flex-direction: column;
+    }
+  }
+
+  .mobile-only {
+    display: block;
+  }
+}

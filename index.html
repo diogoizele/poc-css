@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mobile-styles.css" />
+    <title>PoC CSS Responsivo</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="page-width-constraint">
+          <h1>Página Simples de Exemplo</h1>
+        </div>
+      </header>
+
+      <main class="content-container">
+        <div class="page-width-constraint">
+          <section class="primary-content-block">
+            <h2>Conteúdo Principal</h2>
+            <p>
+              Este é um exemplo básico para testar CSS responsivo, flexbox e
+              media queries.
+            </p>
+          </section>
+
+          <section class="secondary-content-block">
+            <h2>Outro Conteúdo</h2>
+            <p>
+              Aqui você pode adicionar mais texto ou elementos para estilizar.
+            </p>
+            <img
+              class="mobile-only image"
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+              alt="Logo do CSS"
+            />
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="page-width-constraint">
+          <p>Exemplo de PoC &copy; 2024</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
